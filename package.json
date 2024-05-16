@@ -1,0 +1,14 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "npm install -D @types/node autoprefixer eslint eslint-config-next nodemon typescript",
+    "dev": "nodemon  --watch 'src/**/*.ts' --exec \"npx tsx .\\index.ts\""
+  }, 
+  "nodemonConfig": {
+    "ext": "js,json,hbs,html,ts"
+  },
+  "type": "module"
+}
